@@ -1,2 +1,2 @@
 # My resume:
-Go [here](samhaswon.github.io)
+Go [here](https://samhaswon.github.io)
