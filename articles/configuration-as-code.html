@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Samuel Howard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="navbar navbar-inverse mw-100" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../index.html">Samuel Howard</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="../resume.html">Resume</a>
+                        </li>
+                        <li>
+                            <a href="../projects.html">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End of Navbar-->
+        <article>
+            <h2>Configuration as Code With <code>docker-compose</code></h2>
+            <p>In the realm of modern software development, the mantra "infrastructure as code" has become a cornerstone philosophy. 
+                With tools like Docker and Kubernetes, developers and users can define their infrastructure in code, ensuring consistency, reproducibility, and scalability. 
+                However, one area that often receives less attention is the configuration of the application itself. 
+                Enter Docker Compose &mdash; a powerful tool for defining and running multi-container Docker applications. 
+                Today, we'll explore the concept of Configuration as Code with Docker Compose and delve into its benefits.
+            </p><br>
+            <h3>What is Docker Compose?</h3>
+            <p>Docker Compose is a tool for defining and running multi-container Docker applications. 
+                It allows developers to define a set of services, each running in its own container, and specify how these services interact with each other. 
+                Using a simple YAML file, developers can define the configuration of their entire application stack, including networking, volumes, environment variables, and more.
+            </p><br>
+            <h3>The Power of Configuration as Code</h3>
+            <p>Traditionally, configuring an application stack involved manual intervention or the use of ad-hoc scripts. 
+                This approach is error-prone, hard to reproduce across machines, and difficult to maintain. 
+                Configuration as Code, on the other hand, brings the principles of version control, automation, and repeatability to the configuration of your application stack. 
+            </p><br>
+            <h3>How Do I Use It?</h3>
+            <p>Personally, I utilize Docker Compose to manage the many Docker containers running in my home lab. 
+                For each general category of application, I have a <code>docker-compose.yml</code> file describing how the applications should be set up and run. 
+                The only non-ephemeral data left is application configuration and the compose file, which can all be easily backed up with rsync to a remote server (remember the 3-2-1 rule!). 
+            </p><br>
+            <h3>Example</h3>
+            <p>Say you're wanting to create an instance of my <a href="https://github.com/samhaswon/selfhosted-bible" arget="_blank" rel="noopener noreferrer">Self-Hosted Bible</a> server and want to make your configuration repeatable.
+                Well here comes Docker Compose to the rescue. Included in the repo is this sample configuration:
+            </p>
+            <pre><code>
+            version: '3'
+                services:
+                  self-hosted-bible-server:
+                    image: samhaswon/self-hosted-bible:latest
+                    container_name: self-hosted-bible
+                    ports:
+                      - "5000:5000"
+                    restart: always
+                    volumes:
+                      - /path/to/json/bibles:/usr/src/app/bibles/json-bibles
+                    environment:
+                      - ESV_API_KEY=&lt;key-goes-here&gt;
+
+            </code></pre>
+            <p>For configuration options, please see the Docker Compose documentation as there is too much for me to cover here. 
+                After you've written your compose file, just run "<code>docker-compose up -d</code>" to bring up your whole stack!
+                It's truly an amazing piece of technology for simplifying your home lab. It even makes updating easier! 
+                You can use the command "<code>docker-compose pull</code>" to pull the latest images of all the container images in the stack. 
+                Then just run "<code>docker-compose up -d</code>" again to recreate any updated containers. 
+                But don't forget to remove old container images.
+            </p>
+            <h2>Conclusion</h2>
+            <p>Docker Compose can and should be a key player in your home lab. 
+                It allows you to easily configure environments, networks, volumes, and more in a way that is easily versioned and backed up. 
+                Just write a quick little compose file and future you will be thankful. 
+                From backups to changing container hosts, Docker Compose is the way to go. 
+            </p>
+        </article>
+    </body>
+</html>

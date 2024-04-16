@@ -57,11 +57,13 @@ h1 {
 }
 
 .h3,h3 {
-    font-size: 24px
+    font-size: 24px;
+    margin-left: 12px;
 }
 
 .h4,h4 {
-    font-size: 18px
+    font-size: 18px;
+    margin-left: 12px;
 }
 
 .h5,h5 {
@@ -70,6 +72,19 @@ h1 {
 
 .h6,h6 {
     font-size: 12px
+}
+
+article {
+    margin-left: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 200px;
+    color: inherit;
+}
+
+p {
+    margin-left: 1%;
+    margin-right: 5%;
 }
 
 
@@ -641,4 +656,10 @@ th {
   
   .carousel-button.next {
     right: 1rem;
+  }
+  .side-text {
+    display: block;
+    align-self: right;
+    object-position: right;
+    z-index: 0;
   }
