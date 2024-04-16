@@ -4,6 +4,7 @@
         <title>Samuel Howard</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../styles.css">
+        <link rel="shortcut icon" href="../favicon.svg" type="image/svg">
     </head>
     <body>
         <!-- Navbar -->
@@ -49,7 +50,7 @@
                 The only non-ephemeral data left is application configuration and the compose file, which can all be easily backed up with rsync to a remote server (remember the 3-2-1 rule!). 
             </p><br>
             <h3>Example</h3>
-            <p>Say you're wanting to create an instance of my <a href="https://github.com/samhaswon/selfhosted-bible" arget="_blank" rel="noopener noreferrer">Self-Hosted Bible</a> server and want to make your configuration repeatable.
+            <p>Say you're wanting to create an instance of my <a href="https://github.com/samhaswon/selfhosted-bible" target="_blank" rel="noopener noreferrer">Self-Hosted Bible</a> server and want to make your configuration repeatable.
                 Well here comes Docker Compose to the rescue. Included in the repo is this sample configuration:
             </p>
             <pre><code>
@@ -67,6 +68,7 @@
                       - ESV_API_KEY=&lt;key-goes-here&gt;
 
             </code></pre>
+            <aside style="margin-left: 20px; color: lightgrey">For something like this with a key that is passed to the container, you should <em>really</em> use Docker secrets.</aside>
             <p>For configuration options, please see the Docker Compose documentation as there is too much for me to cover here. 
                 After you've written your compose file, just run "<code>docker-compose up -d</code>" to bring up your whole stack!
                 It's truly an amazing piece of technology for simplifying your home lab. It even makes updating easier! 

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="60mm"
+   height="60mm"
+   viewBox="0 0 60 60"
+   version="1.1"
+   id="svg5"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient37644">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop37640" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop37642" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient37562">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop37560" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient33770">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop33768" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient33770"
+       id="linearGradient33772"
+       x1="12.627338"
+       y1="28.899176"
+       x2="45.836639"
+       y2="28.899176"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       xlink:href="#linearGradient37644"
+       id="radialGradient37648"
+       cx="30"
+       cy="30"
+       fx="30"
+       fy="30"
+       r="30"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="layer1">
+    <circle
+       style="fill:#4d4d4d;stroke-width:4.99999;stop-color:#000000;fill-opacity:1"
+       id="circle37568"
+       cx="30"
+       cy="30"
+       r="30" />
+    <circle
+       style="fill:url(#radialGradient37648);stroke-width:4.99999;stop-color:#000000;fill-opacity:1"
+       id="path846"
+       cx="30"
+       cy="30"
+       r="30" />
+    <text
+       xml:space="preserve"
+       style="font-size:42.3333px;line-height:0;font-family:sans-serif;letter-spacing:-20.6375px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#001400;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="9.8574829"
+       y="44.288406"
+       id="text2126"><tspan
+         id="tspan2124"
+         style="font-size:42.3333px;fill:#ffffff;fill-opacity:1;stroke:#001400;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="9.8574829"
+         y="44.288406"
+         dx="0"
+         rotate="0 0 0">SH</tspan></text>
+  </g>
+</svg>
