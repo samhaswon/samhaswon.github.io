@@ -1,70 +1,44 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Samuel Howard</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <link rel="shortcut icon" href="favicon.svg" type="image/svg">
-    </head>
-    <body>
-        <!-- Navbar -->
-        <div class="navbar navbar-inverse mw-100" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">Samuel Howard</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="resume.html">Resume</a>
-                        </li>
-                        <li>
-                            <a href="./projects.html">Projects</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- End of Navbar-->
-        <h2>Index</h2>
-        <list>
-            <ul style="list-style-type:none;">
-                <li><a href="#ai-models">AI Models</a></li>
-                <li><a href="#code-projects">Code Projects</a></li>
-                <li><a href="#homelab">Homelab</a></li>
-            </ul>
-        </list>
-        <h2 id="ai-models">AI Models</h2>
-        <list>
-            <ul style="list-style-type:none;">
-                <li><a href="ai_images.html">AI Image Showcase</a>. A.k.a., what my GPU has been busy with.</li><br>
-                <li><a href="https://civitai.com/user/samhaswon" target="_blank" rel="noopener noreferrer">My CivitAI page</a> where I post models created with/for Stable Diffusion. This includes <a href="https://civitai.com/models/143015/callie2" target="_blank" rel="noopener noreferrer">a model I made of my cat</a></li><br>
-                <li><a href="https://github.com/samhaswon/skin_segmentation/releases" target="_blank" rel="noopener noreferrer">AI skin segmentation</a></li><br>
-            </ul>
-        </list>
-        <h2 id="code-projects">Code Projects</h2>
-        <list>
-            <ul style="list-style-type:none;">
-                <li><a href="https://github.com/samhaswon/bible_search" target="_blank" rel="noopener noreferrer">bible_search</a>: A Python package for searching multiple versions of the Bible</li><br>
-                <li><a href="https://github.com/samhaswon/bing_image_downloader" target="_blank" rel="noopener noreferrer">bing_image_downloader</a>: Python library to download bulk of images from Bing.com</li><br>
-                <li><a href="https://github.com/samhaswon/CSC2310-dockerize" target="_blank" rel="noopener noreferrer">CSC2310-dockerize </a> (archive): For converting the completed F22 CSC2310 project into a docker container</li><br>
-                <li><a href="https://github.com/samhaswon/esv_api" target="_blank" rel="noopener noreferrer">esv_api</a>: A Python package for interfacing with the ESV API</li><br>
-                <li><a href="https://github.com/samhaswon/HS-VEX-code" target="_blank" rel="noopener noreferrer">HS-VEX-code </a> (archive): A collection of all of the code I wrote for the VEX Robotics club in High School</li><br>
-                <li><a href="https://github.com/samhaswon/nicehash-profit-switcher" target="_blank" rel="noopener noreferrer">nicehash-profit-switcher</a>: Just a simple script to query NiceHash's api and switch external miners based on the current profit situation</li><br>
-                <li><a href="https://github.com/samhaswon/selfhosted-bible" target="_blank" rel="noopener noreferrer">selfhosted-bible</a>: A self-hosted webapp of various bible texts</li><br>
-                <li><a href="https://github.com/samhaswon/skin_segmentation" target="_blank" rel="noopener noreferrer">skin_segmentation</a>: A repository detailing the various methods I have attempted for skin segmentation.</li><br>
-                <li><a href="https://github.com/samhaswon/ta-s-aid" target="_blank" rel="noopener noreferrer">ta-s-aid</a>: A collection of useful scripts for Computer Science TAs</li><br>
-            </ul>
-        </list>
-        <h2 id="homelab">Homelab</h2>
-        <ul style="list-style-type:none;">
-            <li>My homelab is where I learn about a variety of technologies. From VMs or Docker to reverse proxies and beyond, it is my place to learn.</li>
-            <li>Here's some of what I have going on:</li><br>
-            <ul>
-                <li><a href="./articles/configuration-as-code.html">Configuration as Code With <code>docker-compose</code></a></li><br>
-                <li>Unifying Nodes in Various Locations Into The Lab</li><br>
-                <li>Mangle Them All: Routing Packets Where They Don't Want To Go</li><br>
-            </ul>
-        </ul>
-    </body>
-</html>
+---
+layout: default
+title: Projects
+---
+<h2>Index</h2>
+<list>
+  <ul style="list-style-type:none;">
+    <li><a href="#ai-models">AI Models</a></li>
+    <li><a href="#code-projects">Code Projects</a></li>
+    <li><a href="#homelab">Homelab</a></li>
+  </ul>
+</list>
+<h2 id="ai-models">AI Models</h2>
+<list>
+  <ul style="list-style-type:none;">
+    <li><a href="{{ '/ai_images.html' | relative_url }}">AI Image Showcase</a>. A.k.a., what my GPU has been busy with.</li><br>
+    <li><a href="https://civitai.com/user/samhaswon" target="_blank" rel="noopener noreferrer">My CivitAI page</a> where I post models created with/for Stable Diffusion. This includes <a href="https://civitai.com/models/143015/callie2" target="_blank" rel="noopener noreferrer">a model I made of my cat</a></li><br>
+    <li><a href="https://github.com/samhaswon/skin_segmentation/releases" target="_blank" rel="noopener noreferrer">AI skin segmentation</a></li><br>
+  </ul>
+</list>
+<h2 id="code-projects">Code Projects</h2>
+<list>
+  <ul style="list-style-type:none;">
+    <li><a href="https://github.com/samhaswon/bible_search" target="_blank" rel="noopener noreferrer">bible_search</a>: A Python package for searching multiple versions of the Bible</li><br>
+    <li><a href="https://github.com/samhaswon/bing_image_downloader" target="_blank" rel="noopener noreferrer">bing_image_downloader</a>: Python library to download bulk of images from Bing.com</li><br>
+    <li><a href="https://github.com/samhaswon/CSC2310-dockerize" target="_blank" rel="noopener noreferrer">CSC2310-dockerize </a> (archive): For converting the completed F22 CSC2310 project into a docker container</li><br>
+    <li><a href="https://github.com/samhaswon/esv_api" target="_blank" rel="noopener noreferrer">esv_api</a>: A Python package for interfacing with the ESV API</li><br>
+    <li><a href="https://github.com/samhaswon/HS-VEX-code" target="_blank" rel="noopener noreferrer">HS-VEX-code </a> (archive): A collection of all of the code I wrote for the VEX Robotics club in High School</li><br>
+    <li><a href="https://github.com/samhaswon/nicehash-profit-switcher" target="_blank" rel="noopener noreferrer">nicehash-profit-switcher</a>: Just a simple script to query NiceHash's api and switch external miners based on the current profit situation</li><br>
+    <li><a href="https://github.com/samhaswon/selfhosted-bible" target="_blank" rel="noopener noreferrer">selfhosted-bible</a>: A self-hosted webapp of various bible texts</li><br>
+    <li><a href="https://github.com/samhaswon/skin_segmentation" target="_blank" rel="noopener noreferrer">skin_segmentation</a>: A repository detailing the various methods I have attempted for skin segmentation.</li><br>
+    <li><a href="https://github.com/samhaswon/ta-s-aid" target="_blank" rel="noopener noreferrer">ta-s-aid</a>: A collection of useful scripts for Computer Science TAs</li><br>
+  </ul>
+</list>
+<h2 id="homelab">Homelab</h2>
+<ul style="list-style-type:none;">
+  <li>My homelab is where I learn about a variety of technologies. From VMs or Docker to reverse proxies and beyond, it is my place to learn.</li>
+  <li>Here's some of what I have going on:</li><br>
+  <ul>
+    <li><a href="{{ '/articles/configuration-as-code.html' | relative_url }}">Configuration as Code With <code>docker-compose</code></a></li><br>
+    <li>Unifying Nodes in Various Locations Into The Lab</li><br>
+    <li>Mangle Them All: Routing Packets Where They Don't Want To Go</li><br>
+  </ul>
+</ul>

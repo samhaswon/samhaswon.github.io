@@ -1,102 +1,77 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Samuel Howard</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <link rel="shortcut icon" href="favicon.svg" type="image/svg">
-        <script defer src="lib/carousel.js"></script>
-    </head>
-    <body>
-        <!-- Navbar -->
-        <div class="navbar navbar-inverse mw-100" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">Samuel Howard</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="resume.html">Resume</a>
-                        </li>
-                        <li>
-                            <a href="./projects.html">Projects</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <h2 id="ai-images">AI Images</h2>
-        <section aria-label="AI Images">
-            <div class="carousel" data-carousel>
-                <button class="carousel-button prev" data-carousel-button="prev">&lArr;</button>
-                <button class="carousel-button next" data-carousel-button="next">&rArr;</button>
-                <ul data-slides>
-                    <li class="slide" data-active>
-                        <img src="ai_images/1.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/2.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/3.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/4.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/5.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/6.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/7.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/8.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/9.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/10.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/11.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/12.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/13.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/14.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/15.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/16.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/17.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/18.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/19.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/20.jpeg" loading="lazy">
-                    </li>
-                    <li class="slide">
-                        <img src="ai_images/21.jpeg" loading="lazy">
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </body>
-</html>
+---
+layout: default
+title: AI Images
+---
+<h2 id="ai-images">AI Images</h2>
+<section aria-label="AI Images">
+  <div class="carousel" data-carousel>
+    <button class="carousel-button prev" data-carousel-button="prev">&lArr;</button>
+    <button class="carousel-button next" data-carousel-button="next">&rArr;</button>
+    <ul data-slides>
+      <li class="slide" data-active>
+        <img src="{{ '/ai_images/1.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/2.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/3.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/4.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/5.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/6.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/7.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/8.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/9.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/10.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/11.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/12.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/13.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/14.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/15.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/16.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/17.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/18.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/19.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/20.jpeg' | relative_url }}" loading="lazy">
+      </li>
+      <li class="slide">
+        <img src="{{ '/ai_images/21.jpeg' | relative_url }}" loading="lazy">
+      </li>
+    </ul>
+  </div>
+</section>
+<script defer src="{{ '/lib/carousel.js' | relative_url }}"></script>

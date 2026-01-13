@@ -1,36 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Samuel Howard</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <link rel="shortcut icon" href="favicon.svg" type="image/svg">
-    </head>
-    <body>
-        <!-- Navbar -->
-        <div class="navbar navbar-inverse mw-100" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">Samuel Howard</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="resume.html">Resume</a>
-                        </li>
-                        <li>
-                            <a href="./projects.html">Projects</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- End of Navbar-->
-        <!-- Resume -->
-        <div align="center">
-            <button><a href="./rendered/Resume.pdf" download="Samuel_Howard_Resume.pdf" style="color: black">Download</a></button>
-        </div>
-        <iframe src="./rendered/Resume.html" title="resume" style="border:none; width: -webkit-fill-available; height: 100vh"></iframe>
-        <!-- End Resume -->
-    </body>
-</html>
+---
+layout: default
+title: Resume
+---
+<div align="center">
+  <button>
+    <a href="{{ '/rendered/Resume.pdf' | relative_url }}" download="Samuel_Howard_Resume.pdf" style="color: black">Download</a>
+  </button>
+</div>
+<iframe src="{{ '/rendered/Resume.html' | relative_url }}" title="resume" style="border:none; width: -webkit-fill-available; height: 100vh"></iframe>

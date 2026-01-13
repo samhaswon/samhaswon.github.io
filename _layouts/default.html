@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg">
+    <link rel="stylesheet" type="text/css" href="{{ '/styles.css' | relative_url }}">
+    {{ page.extra_head }}
+  </head>
+  <body>
+    {% include navbar.html %}
+    {{ content }}
+  </body>
+</html>
