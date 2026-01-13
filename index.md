@@ -7,7 +7,7 @@ title: Samuel Howard
   <br>
   <h4>
     I'm Samuel Howard,<br><br>
-    a Computer Science student at
+    a Computer Science student (Masters Candidate) at
     <a href="https://www.tntech.edu/" target="_blank" rel="noopener noreferrer">Tennessee Tech University</a>
   </h4>
 </div>
